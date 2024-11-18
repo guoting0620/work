@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台南美食介紹</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>三家必吃台南美食</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">關於台南</a></li>
+                <li><a href="#foods">特色美食</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>關於台南</h2>
+            <p>台南是台灣的美食天堂，擁有豐富的文化和獨特的在地美食。這裡融合了傳統與現代風味，吸引眾多饕客前來。</p>
+        </section>
+        <section id="foods">
+            <h2>台南特色美食</h2>
+            <div class="food-item">
+                <img src="image1.png" alt="胡椒餅">
+                <h3>福州香胡椒餅</h3>
+                <p>包了滿滿醃肉與蔥花後，再將胡椒餅貼平放進爐內邊烘烤，</p>
+                <p>待一段時間後，熱騰騰又爆汁的胡椒餅就出爐了!真是令垂涎三尺阿...。</p>
+            </div>
+            <div class="food-item">
+                <img src="image3.png" alt="擔仔麵">
+                <h3>金得春捲</h3>
+                <p>來台南生活地3個月的我才知道，原來台南人都是清明節買潤餅來祭祖</p>
+                <p>上次來真的太多人了，排隊至少要排30分鐘以上才買的到，可惜還沒吃到過...</p>
+                <p>下次肯定要找機會去排隊!!!</p>
+            </div>
+            <div class="food-item">
+                <img src="image2.png" alt="米糕">
+                <h3>炮店米糕-無名米糕</h3>
+                <p>沒有名字的無名米糕，藏在台南市中山路的巷弄裡面，</p>
+                <p>取"炮店"的由來是因為巷子外面有賣煙火的商行，</p>
+                <p>小碗米糕才25元，誰不會想去嘗鮮看看呢?。</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>聯絡我們</h2>
+            <form>
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">電子郵件：</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">留言：</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">送出</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 台南美食介紹 | 教授:高嘉宏;學生:郭冠廷</p>
+    </footer>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台南美食介紹</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f9f9f9; 
+            font-family: Arial, sans-serif;
+            color: #333; 
+        }
+
+        header {
+            background-color: #f8b400; 
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background-color: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .food-item {
+            background-color: #ffe4b5; 
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333; 
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+
