@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-target {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .dropdown-menu {
+            display: none; /* 預設隱藏 */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            z-index: 1000;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-menu li {
+            padding: 8px 20px;
+            cursor: pointer;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdown-target">目標</button>
+        <ul class="dropdown-menu">
+            <li>選項 1</li>
+            <li>選項 2</li>
+            <li>選項 3</li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const dropdown = document.querySelector(".dropdown");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+
+            
+            dropdown.addEventListener("mouseenter", () => {
+                dropdownMenu.style.display = "block";
+            });
+
+            
+            dropdown.addEventListener("mouseleave", () => {
+                dropdownMenu.style.display = "none";
+            });
+        });
+    </script>
+</body>
+</html>
